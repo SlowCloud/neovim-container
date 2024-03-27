@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  neovim-server:
+    build:
+      context: .
+    volumes:
+      - ./workspace:/the/workdir/path:rw
+    ports:
+      - "6666:6666"
